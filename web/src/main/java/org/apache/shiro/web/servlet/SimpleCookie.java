@@ -370,8 +370,6 @@ public class SimpleCookie implements Cookie {
         boolean secure = isSecure();
         boolean httpOnly = false; //no need to add the extra text, plus the value 'deleteMe' is not sensitive at all
 
-        addCookieHeader(response, name, value, comment, domain, path, maxAge, version, secure, httpOnly);
-
         log.trace("Removed '{}' cookie by setting maxAge=0", name);
     }
 
