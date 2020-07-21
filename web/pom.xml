@@ -30,12 +30,15 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>shiro-web</artifactId>
     <name>Apache Shiro :: Web</name>
+    <!-- Forking just here, but keeping rest of shiro dependencies the same. -->
+    <version>1.5.3-TIBCO-1</version>
     <packaging>bundle</packaging>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-core</artifactId>
+            <version>1.5.3</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
@@ -61,12 +64,14 @@
         <dependency>
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-config-ogdl</artifactId>
+            <version>1.5.3</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-core</artifactId>
+            <version>1.5.3</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
